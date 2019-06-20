@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystals Collector Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+   
+  <div class="header text-center">
+    <h1>CRYSTALS COLLECTOR!</h1>
+    <h3 id="randomnumber">#: </h3>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 instructions">
+      <p>You will be given a random number at the start of the game.</p>
+      <p>There are four crystals below. The value of each crystal is hidden from you until you click on it.</p>
+      <P>By clicking on a crystal you will add a specific amount of points to your total score.</P>
+      <p>If you match your total score to the random number, you win! 
+    <p>If your total score goes above the random number,
+        you lose.</p>
+      <p>Each time the game starts the values of each crystal changes.</p>
+    </div>
+  </div>
+
+ 
+ 
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+        <img class="crystalimg img-responsive" id="crystal1" src="assets/images/blue.png" alt="Blue Crystal" />
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+        <img class="crystalimg img-responsive" id="crystal2" src="assets/images/red.png" alt="Red Crystal" />
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+        <img class="crystalimg img-responsive" id="crystal3" src="assets/images/yellow.png" alt="Yellow Crystal" />
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+        <img class="crystalimg img-responsive" id="crystal4" src="assets/images/green.png" alt="Green Crystal" />
+      </div>
+    </div>
+
+
+
+    <div class="row text-center">
+      <div class="col-lg-4 total">
+        <h3>TOTAL SCORE:</h3>
+        <h3 id="totalScore"></h3>
+      </div>
+
+      <div class="col-lg-4 scores">
+        <p class="score">WINS: <span id="wins"></span></p>
+        <p class="score">LOSSES: <span id="losses"></span></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
